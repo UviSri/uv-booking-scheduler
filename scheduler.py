@@ -91,7 +91,7 @@ def make_booking_json(api_url, booking_date, facility_id, flat_id, slot):
 
 def wait_until_6_or_run_now():
     now = now_ist()
-    target = now.replace(hour=6, minute=0, second=0, microsecond=0)
+    target = now.replace(hour=6, minute=0, second=1, microsecond=0)
     if now >= target:
         return
     # Sleep until 2 seconds before target
